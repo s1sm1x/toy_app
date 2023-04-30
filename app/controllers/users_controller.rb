@@ -4,6 +4,8 @@ class UsersController < ApplicationController
   # GET /users or /users.json
   def index
     @users = User.all
+    flash[:notice] = "Notice 1"
+    flash[:alert] = "Alert 1"
   end
 
   # GET /users/1 or /users/1.json
